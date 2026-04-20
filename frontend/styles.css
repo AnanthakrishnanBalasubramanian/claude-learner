@@ -1,0 +1,29 @@
+/* Claude Learner — base styles */
+:root {
+  --bg:        #0d1117;
+  --bg-2:      #161b22;
+  --bg-3:      #1c2230;
+  --line:      #262d3a;
+  --line-soft: #1f2530;
+  --text:      #e6edf3;
+  --text-2:    #9aa4b2;
+  --text-3:    #6b7280;
+  --orange:    #ff8a4c;
+  --pink:      #ff5e87;
+  --grad:      linear-gradient(135deg, #ff8a4c 0%, #ff5e87 100%);
+  --grad-soft: linear-gradient(135deg, rgba(255,138,76,0.18) 0%, rgba(255,94,135,0.18) 100%);
+}
+
+html, body { margin: 0; padding: 0; background: #0a0a0a; color: var(--text);
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+#root { min-height: 100vh; }
+
+* { box-sizing: border-box; }
+
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; padding: 0; }
+
+/* utility scrollbar hide */
+.cl-scroll::-webkit-scrollbar { display: none; }
+.cl-scroll { scrollbar-width: none; }
